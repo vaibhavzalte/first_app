@@ -9,6 +9,7 @@ import {
 import Login from './components/Login';
 import { StyleComp } from './components/StyleComp';
 import { InputComp } from './components/InputComp';
+import FlatlistComp from './components/FlatlistComp';
 
 const myFun = () => {
   console.warn('function called');
@@ -33,6 +34,7 @@ function App() {
       <Login userName={'vaibhav'} />
       <StyleComp/>
       <InputComp/>
+      <FlatlistComp/>
     </SafeAreaView>
   );
 }

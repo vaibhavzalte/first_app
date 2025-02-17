@@ -12,6 +12,11 @@ export const InputComp = () => {
                 value={name}
                 onChangeText={(text) => setName(text)}
             />
+            <TextInput
+                placeholder="enter password"
+                style={styles.textInput}
+                secureTextEntry={true}
+            />
             <Button title="clear input" onPress={() => setName('')}></Button>
         </View>
     );

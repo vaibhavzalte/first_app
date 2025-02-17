@@ -7,6 +7,7 @@ import {
   Alert,
 } from 'react-native';
 import Login from './components/Login';
+import { StyleComp } from './components/StyleComp';
 
 const myFun = () => {
   console.warn('function called');
@@ -29,6 +30,7 @@ function App() {
       <Button onPress={() => printNumber(4)} title="Button 2" color={'red'} />
       <Button onPress={() => setCount(count + 1)} title={`${count}`} color={'black'} />
       <Login userName={'vaibhav'} />
+      <StyleComp/>
     </SafeAreaView>
   );
 }

@@ -1,9 +1,10 @@
 import React from "react";
 import { View,Text } from "react-native";
 
-function Login(){
+function Login({userName}){
     return(
         <View>
+            <Text>hey ,{userName}</Text>
             <Text>login here</Text>
             <Text>input</Text>
         </View>

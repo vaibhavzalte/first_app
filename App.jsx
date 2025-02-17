@@ -24,11 +24,11 @@ function App() {
         <Text>hello sdf </Text>
       </View>
       {/* direct call */}
-      <Button onPress={myFun} title="Learn More" color={'green'} />
+      <Button onPress={myFun} title="Button 1" color={'green'} />
       {/* pass parameter */}
-      <Button onPress={() => printNumber(4)} title="Learn More" color={'red'} />
+      <Button onPress={() => printNumber(4)} title="Button 2" color={'red'} />
       <Button onPress={() => setCount(count + 1)} title={`${count}`} color={'black'} />
-      <Login />
+      <Login userName={'vaibhav'} />
     </SafeAreaView>
   );
 }

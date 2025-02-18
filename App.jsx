@@ -11,6 +11,7 @@ import { StyleComp } from './components/StyleComp';
 import { InputComp } from './components/InputComp';
 import FlatlistComp from './components/FlatlistComp';
 import MapList from './components/MapList';
+import GridComp from './components/GridComp';
 
 const myFun = () => {
   console.warn('function called');
@@ -29,7 +30,8 @@ function App() {
       {/* <StyleComp/> */}
       {/* <InputComp/> */}
       {/* <FlatlistComp/> */}
-      <MapList/>
+      {/* <MapList/> */}
+      <GridComp/>
       </View>
     </SafeAreaView>
   );

@@ -12,17 +12,10 @@ import { InputComp } from './components/InputComp';
 import FlatlistComp from './components/FlatlistComp';
 import MapList from './components/MapList';
 import GridComp from './components/GridComp';
+import FlatlistComp2 from './components/FlatlistComp2';
 
-const myFun = () => {
-  console.warn('function called');
-};
-
-const printNumber = (num) => {
-  console.warn('number is :', num);
-};
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <SafeAreaView>
       <View>
@@ -31,7 +24,8 @@ function App() {
       {/* <InputComp/> */}
       {/* <FlatlistComp/> */}
       {/* <MapList/> */}
-      <GridComp/>
+      {/* <GridComp/> */}
+      <FlatlistComp2/>
       </View>
     </SafeAreaView>
   );

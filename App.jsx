@@ -13,6 +13,7 @@ import FlatlistComp from './components/FlatlistComp';
 import MapList from './components/MapList';
 import GridComp from './components/GridComp';
 import FlatlistComp2 from './components/FlatlistComp2';
+import SectionListComp from './components/SectionListComp';
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
       {/* <FlatlistComp/> */}
       {/* <MapList/> */}
       {/* <GridComp/> */}
-      <FlatlistComp2/>
+      {/* <FlatlistComp2/> */}
       </View>
+      <SectionListComp/>
     </SafeAreaView>
   );
 }

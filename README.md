@@ -6,3 +6,6 @@ cle
 
 adb devices `adb devices`
 run app `npx react-native run-android`
+
+How to install npm package 
+- e.g.`npm install react-native-webview` after this command re run the application using `npx react-native run-android`

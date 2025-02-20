@@ -21,6 +21,7 @@ import ButtonsComp from './components/ButtonsComp';
 import RadioComp from './components/RadioComp';
 import ModelComp from './components/ModelComp';
 import PressableComp from './components/PressableComp';
+import WebView from 'react-native-webview';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       // <ButtonsComp/>
       // <RadioComp/>
       // <ModelComp/>
-      <PressableComp/>
+      // <PressableComp/>
+      <WebView source={{uri:'https://reactnative.dev/docs/libraries'}}></WebView>
   );
 }
 

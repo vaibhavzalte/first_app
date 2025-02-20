@@ -19,6 +19,7 @@ import UseEffectComp from './components/UseEffectComp';
 import ResponsiveLayoutComp from './components/ResponsiveLayoutComp';
 import ButtonsComp from './components/ButtonsComp';
 import RadioComp from './components/RadioComp';
+import ModelComp from './components/ModelComp';
 
 
 function App() {
@@ -26,10 +27,7 @@ function App() {
       // <ResponsiveLayoutComp/>
       // <ButtonsComp/>
       // <RadioComp/>
-      <View>
-        <Button title='show loader'/>
-        <ActivityIndicator color="red"  size="large" />
-      </View>
+      <ModelComp/>
   );
 }
 

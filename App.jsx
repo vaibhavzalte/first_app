@@ -14,12 +14,13 @@ import MapList from './components/MapList';
 import GridComp from './components/GridComp';
 import FlatlistComp2 from './components/FlatlistComp2';
 import SectionListComp from './components/SectionListComp';
+import UseEffectComp from './components/UseEffectComp';
 
 
 function App() {
   return (
     <SafeAreaView>
-      <View>
+      {/* <View> */}
       {/* <Login userName={'vaibhav'} /> */}
       {/* <StyleComp/> */}
       {/* <InputComp/> */}
@@ -27,8 +28,9 @@ function App() {
       {/* <MapList/> */}
       {/* <GridComp/> */}
       {/* <FlatlistComp2/> */}
-      </View>
-      <SectionListComp/>
+      {/* </View> */}
+      {/* <SectionListComp/> */}
+      <UseEffectComp/>
     </SafeAreaView>
   );
 }

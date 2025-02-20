@@ -1,7 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
-import { View, Text ,Button} from 'react-native';
+import { View, Text ,Button, TextInput} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,12 +22,22 @@ const Login = (props) => {
   );
 };
 
+const Header = () => {
+  return (
+    <View>
+      <TextInput placeholder='enter name'/>
+    </View>
+  );
+};
+
 function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
       // for all position
       screenOptions={{
+        headerLeft:()=><Button title='left' />,
+        headerRight:()=><Header/>,
         headerStyle:{
           backgroundColor:'red',
         },

@@ -1,4 +1,4 @@
-import { View, Text, Pressable,StatusBar } from 'react-native'
+import { View, Text, Pressable,StatusBar, Platform } from 'react-native'
 import React from 'react'
 
 export default function PressableComp() {
@@ -13,6 +13,8 @@ export default function PressableComp() {
                 onPressOut={() => console.log("on press out")}
             >
                 <Text style={{ backgroundColor: 'blue', color: 'white', fontSize: 30, margin: 40, textAlign: 'center' }}>click Me</Text>
+                <Text>{Platform.OS}</Text>
+                <Text>{JSON.stringify(Platform)}</Text>
             </Pressable>
         </View>
     )

@@ -16,11 +16,13 @@ import FlatlistComp2 from './components/FlatlistComp2';
 import SectionListComp from './components/SectionListComp';
 import UseEffectComp from './components/UseEffectComp';
 import ResponsiveLayoutComp from './components/ResponsiveLayoutComp';
+import ButtonsComp from './components/ButtonsComp';
 
 
 function App() {
   return (
-      <ResponsiveLayoutComp/>
+      // <ResponsiveLayoutComp/>
+      <ButtonsComp/>
   );
 }
 

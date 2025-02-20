@@ -1,4 +1,4 @@
-import { View, Text, TouchableHighlight, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React, { useState } from 'react';
 
 export default function RadioComp() {

@@ -5,6 +5,7 @@ import {
   View,
   Button,
   Alert,
+  ActivityIndicator,
 } from 'react-native';
 import Login from './components/Login';
 import { StyleComp } from './components/StyleComp';
@@ -24,7 +25,11 @@ function App() {
   return (
       // <ResponsiveLayoutComp/>
       // <ButtonsComp/>
-      <RadioComp/>
+      // <RadioComp/>
+      <View>
+        <Button title='show loader'/>
+        <ActivityIndicator color="red"  size="large" />
+      </View>
   );
 }
 

@@ -1,13 +1,13 @@
-import React from "react";
-import { View,Text } from "react-native";
+import React, { useState } from "react";
+import { View, Text, Button, TextInput } from "react-native";
 
-function Login({userName}){
-    return(
+function Login(props) {
+    const [name,setName] = useState("");
+    return (
         <View>
-            <Text>hey ,{userName}</Text>
-            <Text>login here</Text>
-            <Text>input</Text>
+            <TextInput placeholder='enter name' onChangeText={(text)=>setName(text)} />
+            <Button title="go to home" onPress={() => props.navigation.navigate("myhome",{name})} />
         </View>
-   );
+    );
 }
 export default Login;

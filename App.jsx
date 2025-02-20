@@ -15,23 +15,12 @@ import GridComp from './components/GridComp';
 import FlatlistComp2 from './components/FlatlistComp2';
 import SectionListComp from './components/SectionListComp';
 import UseEffectComp from './components/UseEffectComp';
+import ResponsiveLayoutComp from './components/ResponsiveLayoutComp';
 
 
 function App() {
   return (
-    <SafeAreaView>
-      {/* <View> */}
-      {/* <Login userName={'vaibhav'} /> */}
-      {/* <StyleComp/> */}
-      {/* <InputComp/> */}
-      {/* <FlatlistComp/> */}
-      {/* <MapList/> */}
-      {/* <GridComp/> */}
-      {/* <FlatlistComp2/> */}
-      {/* </View> */}
-      {/* <SectionListComp/> */}
-      <UseEffectComp/>
-    </SafeAreaView>
+      <ResponsiveLayoutComp/>
   );
 }
 

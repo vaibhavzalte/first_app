@@ -9,3 +9,16 @@ run app `npx react-native run-android`
 
 How to install npm package 
 - e.g.`npm install react-native-webview` after this command re run the application using `npx react-native run-android`
+
+## Navigation
+- refer https://reactnavigation.org/
+- `npm install @react-navigation/native`
+-  install dependencies for emulator  `npm install react-native-screens react-native-safe-area-context`
+
+    ## Navigation type
+    -   stack navigation:
+        - `npm install @react-navigation/native-stack`
+    -   drawer navigation,
+    -   tab navigation
+
+- after run this `npx react-native run-android`

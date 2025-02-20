@@ -1,9 +1,10 @@
-import { View, Text, Pressable } from 'react-native'
+import { View, Text, Pressable,StatusBar } from 'react-native'
 import React from 'react'
 
 export default function PressableComp() {
     return (
         <View>
+            <StatusBar backgroundColor="red" barStyle="default"/>
             <Text>PressableComp</Text>
             <Pressable
                 onPress={() => console.log("on press")}

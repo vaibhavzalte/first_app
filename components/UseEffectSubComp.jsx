@@ -4,8 +4,12 @@ import React, { useEffect } from 'react'
 export default function UseEffectSubComp() {
     useEffect(()=>{
      console.log("inside sub");
+    let timer = setInterval(()=>{
+        console.log("interval set")
+     },2000);
      return ()=>{
-        console.log("unmounting......")
+        console.log("unmounting and cleared the interval")
+        clearInterval(timer);
      }
     })
   return (

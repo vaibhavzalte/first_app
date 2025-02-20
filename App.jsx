@@ -20,6 +20,7 @@ import ResponsiveLayoutComp from './components/ResponsiveLayoutComp';
 import ButtonsComp from './components/ButtonsComp';
 import RadioComp from './components/RadioComp';
 import ModelComp from './components/ModelComp';
+import PressableComp from './components/PressableComp';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
       // <ResponsiveLayoutComp/>
       // <ButtonsComp/>
       // <RadioComp/>
-      <ModelComp/>
+      // <ModelComp/>
+      <PressableComp/>
   );
 }
 

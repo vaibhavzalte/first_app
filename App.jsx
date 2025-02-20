@@ -17,12 +17,14 @@ import SectionListComp from './components/SectionListComp';
 import UseEffectComp from './components/UseEffectComp';
 import ResponsiveLayoutComp from './components/ResponsiveLayoutComp';
 import ButtonsComp from './components/ButtonsComp';
+import RadioComp from './components/RadioComp';
 
 
 function App() {
   return (
       // <ResponsiveLayoutComp/>
-      <ButtonsComp/>
+      // <ButtonsComp/>
+      <RadioComp/>
   );
 }
 

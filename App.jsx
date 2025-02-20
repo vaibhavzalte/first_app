@@ -25,9 +25,25 @@ const Login = (props) => {
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+      // for all position
+      screenOptions={{
+        headerStyle:{
+          backgroundColor:'red',
+        },
+        headerTitleStyle:{
+          fontSize:30,
+        },
+      }}
+      >
         <Stack.Screen name="login" component={Login} />
-        <Stack.Screen name="myhome" component={Home} />
+        <Stack.Screen name="myhome" component={Home} 
+        // particular
+        options={{
+          headerStyle:{
+            backgroundColor:'blue',
+          }
+        }}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

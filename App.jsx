@@ -5,7 +5,7 @@ import { View, Text ,Button, TextInput} from 'react-native';
 import { Home } from './components/MyHome';
 import Login from './components/Login';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FetchDataAPI from './components/FetchDataAPI';
+import FetchDataAPI2 from './components/FetchDataAPI2';
 // const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -43,7 +43,7 @@ function App() {
       </Stack.Navigator> */}
       <Tab.Navigator>
         {/* <Tab.Screen name='Login' component={Login}/> */}
-        <Tab.Screen name='Comp2' component={FetchDataAPI}/>
+        <Tab.Screen name='Comp2' component={FetchDataAPI2}/>
       </Tab.Navigator>
 
     </NavigationContainer>

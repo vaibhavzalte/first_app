@@ -27,3 +27,4 @@ How to install npm package
 
 # api calls
 - API Call | Fetch Rest API
+-  List with API Data | Get List with API

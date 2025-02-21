@@ -7,6 +7,7 @@ import Login from './components/Login';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FetchDataAPI2 from './components/FetchDataAPI2';
 import FetchInEmulator from './components/FetchInEmulator';
+import RefComp from './components/RefComp';
 // const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -20,7 +21,7 @@ const Header = () => {
 
 function App() {
   return (
-    <FetchInEmulator/>
+    <RefComp/>
   );
 }
 export default App;

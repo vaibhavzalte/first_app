@@ -4,7 +4,9 @@ import React from 'react';
 import { View, Text ,Button, TextInput} from 'react-native';
 import { Home } from './components/MyHome';
 import Login from './components/Login';
-const Stack = createNativeStackNavigator();
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Header = () => {
   return (
@@ -17,7 +19,7 @@ const Header = () => {
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      {/* <Stack.Navigator
       // for all position
       screenOptions={{
         headerRight:()=><Header/>,
@@ -37,9 +39,16 @@ function App() {
             backgroundColor:'blue',
           }
         }}/>
-      </Stack.Navigator>
+      </Stack.Navigator> */}
+      <Tab.Navigator>
+        <Tab.Screen name='Login' component={Login}/>
+        <Tab.Screen name='Comp2' component={Comp2}/>
+      </Tab.Navigator>
+
     </NavigationContainer>
   );
 }
-
+const Comp2=()=>{
+  return (<View> <Text>This is comp222</Text></View>);
+}
 export default App;

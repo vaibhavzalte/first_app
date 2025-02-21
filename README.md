@@ -20,6 +20,10 @@ How to install npm package
         - `npm install @react-navigation/native-stack`
     -   drawer navigation,
     -   tab navigation
+        - `npm install @react-navigation/bottom-tabs`
 - during this any error try this `npm start --clean-cache`
 - after run this `npx react-native run-android`
 
+
+# api calls
+- API Call | Fetch Rest API

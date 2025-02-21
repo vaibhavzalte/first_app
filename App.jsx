@@ -1,27 +1,30 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import React from 'react';
-import { View, Text ,Button, TextInput} from 'react-native';
-import { Home } from './components/MyHome';
-import Login from './components/Login';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import FetchDataAPI2 from './components/FetchDataAPI2';
-import FetchInEmulator from './components/FetchInEmulator';
+import React, { useState } from 'react';
 import RefComp from './components/RefComp';
-// const Stack = createNativeStackNavigator();
-const Tab = createBottomTabNavigator();
-
-const Header = () => {
-  return (
-    <View>
-      <TextInput placeholder='enter name'/>
-    </View>
-  );
-};
+import { View ,Text, Button} from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function App() {
+  const [name,setName] = useState('');
+  const setData = async ()=>{
+    await AsyncStorage.setItem('name','vaibhav');
+  };
+  const getData = async ()=>{
+  const data = await AsyncStorage.getItem('name');
+  setName(data);
+  };
+  const removeData = async ()=>{
+  await AsyncStorage.removeItem('name');
+  setName('');
+  };
   return (
-    <RefComp/>
+    <View>
+      <Text style={{textAlign:'center',fontSize:20}}>Tutorial of Async storage</Text>
+      <Button title='Set Data' onPress={setData}/>
+      <Text>Data will be set in async storage  name : vaibhav </Text>
+      <Button title='Get Data' onPress={getData}/>
+      <Button title='Remove Data' onPress={removeData}/>
+      <Text>data :{name}</Text>
+    </View>
   );
 }
 export default App;

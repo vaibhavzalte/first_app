@@ -29,3 +29,9 @@ How to install npm package
 - API Call | Fetch Rest API
 - List with API Data | Get List with 
 - FlatList with API Data | use flat list with API
+
+# Fetch data from JSON server 
+- run local server with ip
+    - first run this command in json-server folder `json-server --host 0.0.0.0 db.json`
+    - then check ip (`ipconfig`) enter ip:3000 in url and check 
+- `http://10.0.2.2:3000/users` for emulator (it connect ip and emulator)

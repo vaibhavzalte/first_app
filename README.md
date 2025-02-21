@@ -27,4 +27,5 @@ How to install npm package
 
 # api calls
 - API Call | Fetch Rest API
--  List with API Data | Get List with API
+- List with API Data | Get List with 
+- FlatList with API Data | use flat list with API

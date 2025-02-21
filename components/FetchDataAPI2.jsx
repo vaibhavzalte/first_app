@@ -1,4 +1,4 @@
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, FlatList } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
 export default function FetchDataAPI() {
@@ -13,19 +13,22 @@ export default function FetchDataAPI() {
         setData(result);
     };
     return (
-        <ScrollView>
+        <View>
             <Text>FetchData :</Text>
             {
                 data.length > 0 ?
-                    data.map((item) =>
-                        <View style={{padding:2,margin:10 ,borderWidth:2}}>
-                            <Text style={{backgroundColor:"#ddd"}}>Id:  {item.id} </Text>;
-                            <Text>title: {item.title} </Text>
-                            <Text>body: {item.body} </Text>
-                        </View>
-                    )
+                    <FlatList
+                        data={data}
+                        renderItem={({item}) =>
+                            <View style={{ padding: 2, margin: 10, borderWidth: 2 }}>
+                                <Text style={{ backgroundColor: "#ddd" }}>Id:  {item.id} </Text>;
+                                <Text>title: {item.title} </Text>
+                                <Text>body: {item.body} </Text>
+                            </View>
+                        }
+                    />
                     : null
             }
-        </ScrollView>
+        </View>
     );
 }

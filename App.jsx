@@ -1,29 +1,44 @@
 import React, { useState } from 'react';
-import RefComp from './components/RefComp';
-import { View ,Text, Button} from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import { View ,Text, Button, ScrollView} from 'react-native';
+import Header from './components/Header';
+import Product from './components/Product';
+const products=[
+  {
+      name:"samsung",
+      color:"black",
+      price:10000,
+      image:require("./components/image.png"),
+  },
+  {
+      name:"iphone",
+      color:"red",
+      price:99999,
+      image:require("./components/image.png")
+  },
+  {
+      name:"realme",
+      color:"red",
+      price:99999,
+      image:require("./components/image.png")
+  },
+  {
+      name:"nokia",
+      color:"red",
+      price:99999,
+      image:require("./components/image.png")
+  },
+]
 function App() {
-  const [name,setName] = useState('');
-  const setData = async ()=>{
-    await AsyncStorage.setItem('name','vaibhav');
-  };
-  const getData = async ()=>{
-  const data = await AsyncStorage.getItem('name');
-  setName(data);
-  };
-  const removeData = async ()=>{
-  await AsyncStorage.removeItem('name');
-  setName('');
-  };
+
   return (
     <View>
-      <Text style={{textAlign:'center',fontSize:20}}>Tutorial of Async storage</Text>
-      <Button title='Set Data' onPress={setData}/>
-      <Text>Data will be set in async storage  name : vaibhav </Text>
-      <Button title='Get Data' onPress={getData}/>
-      <Button title='Remove Data' onPress={removeData}/>
-      <Text>data :{name}</Text>
+      <Header/>
+      <ScrollView>
+        {
+          products.length > 0 &&
+          products.map((item)=><Product item={item}/>)
+        }
+      </ScrollView>
     </View>
   );
 }
